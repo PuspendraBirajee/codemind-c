@@ -3,15 +3,13 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    while(n>0)
+    for(int j=1;j<=n;j++)
     {
-    for(int i=1;i<=n;i++)
-    {
-        printf("%d",i);
-       
-    }
-    printf("
+        for(int i=n;i>=1;i--)
+        {
+       printf("%d ",i);
+        }
+       printf("
 ");
-    n=n-1;
     }
 }
