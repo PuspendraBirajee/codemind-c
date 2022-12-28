@@ -12,35 +12,35 @@ int main()
             break;
         }
     }
-    for(int i=n;;i--)
+    for(int j=n;;j--)
     {
-        if(fibo(i))
+        if(fibo(j))
         {
-            b=i;
+            b=j;
             break;
         }
     }
     d1=f-n;
     d2=n-b;
-    if(d1>d2)
-    {
-        printf("%d",b);
-    }
-    else if(d1<d2)
+    if(d1<d2)
     {
         printf("%d",f);
     }
+    else if(d2<d1)
+    {
+        printf("%d",b);
+    }
     else if(d1==d2)
     {
-        printf("%d %d",b,f);
+        printf ("%d %d",b,f);
     }
 }
 int fibo(int n)
 {
-    int a=0,b=1,c;
+    int a,b,c;
     if(n==0||n==1)
     {
-        printf("%d",&n);
+        printf("%d",n);
     }
     else
     {
@@ -56,7 +56,7 @@ int fibo(int n)
     }
     if(n==c)
     {
-         return 1;
+        return 1;
     }
     else
     {
