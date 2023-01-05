@@ -8,7 +8,7 @@ int main()
     {
         scanf("%d",&x[i]);
     }
-   int a,b,c=0,f=1;
+   int a,b,c=0,f=0;
    scanf("%d%d",&a,&b);
    for(int i=0;i<n;i++)
    {
@@ -19,10 +19,10 @@ int main()
        else
        {
            printf("%d ",x[i]);
-           f=0;
+           f++;
        }
    }
-   if(f==1)
+   if(f==0)
    {
         printf("-1");
    }
