@@ -2,15 +2,18 @@
 int self(int n)
 {
     int r,t=n;
-    while(n!=0){
+    while(n!=0)
+    {
         r=n%10;
-        if(r!=0){
-           if(t%r!=0)
-           {
-               return 0;
-           }
+        if(r!=0)
+        {
+            if(t%r!=0)
+            {
+                return 0;
+            }
         }
-        else{
+        else
+        {
             return 0;
         }
         n=n/10;
@@ -18,12 +21,14 @@ int self(int n)
     return 1;
 }
 int main()
-{
- int a,b;
- scanf("%d%d",&a,&b);
- for(int i=a;i<=b;i++){
-     if(self(i)){
-         printf("%d ",i);
-     }
- }
+    {
+        int a,b;
+        scanf("%d%d",&a,&b);
+        for(int i=a; i<=b;i++)
+        {
+            if(self(i))
+            {
+                printf("%d ",i);
+            }
+        }
 }
