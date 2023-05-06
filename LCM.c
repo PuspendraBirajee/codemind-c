@@ -1,15 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,hcf;
-    scanf("%d%d",&a,&b);
-    for(int i=1;i<=a&&i<=b;i++)
+    int n1,n2,hcf,lcm;
+    scanf("%d%d",&n1,&n2);
+    for(int i=1;i<=n1 && i<=n2; i++)
     {
-      if(a%i==0&&b%i==0)
-      {
-          hcf=i;
-      }
+        if(n1%i==0 && n2%i==0)
+        {
+            hcf=i;
+        }
     }
-    int lcm=a*b/hcf;
+    lcm=n1*n2/hcf;
     printf("%d",lcm);
 }
