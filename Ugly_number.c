@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,r;
     scanf("%d",&n);
-    while(n!=1)
+    while(n!=0)
     {
         if(n%2==0)
         {
@@ -21,14 +21,13 @@ int main()
         {
             break;
         }
-       
     }
-     if(n==1)
-        {
-            printf("Ugly Number");
-        }
-        else
-        {
-            printf("Not Ugly Number");
-        }
+    if(n==1)
+    {
+        printf("Ugly Number");
+    }
+    else
+    {
+      printf("Not Ugly Number");   
+    }
 }
