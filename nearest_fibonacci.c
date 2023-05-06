@@ -17,22 +17,22 @@ int main()
         if(fibo(j))
         {
             b=j;
-            break;
-        }
+            break; 
+        } 
     }
     d1=f-n;
     d2=n-b;
-    if(d1<d2)
-    {
-        printf("%d",f);
-    }
-    else if(d2<d1)
-    {
-        printf("%d",b);
+    if(d1>d2)
+    { 
+        printf("%d ",b);
     }
     else if(d1==d2)
     {
-        printf ("%d %d",b,f);
+        printf("%d %d",b,f);
+    }
+    else
+    {
+        printf("%d",f);
     }
 }
 int fibo(int n)
@@ -44,9 +44,7 @@ int fibo(int n)
     }
     else
     {
-        a=0;
-        b=1;
-        c=a+b;
+        a=0; b=1; c=a+b;
     }
     while(n>c)
     {
