@@ -3,14 +3,14 @@ int main()
 {
     int n,rem,rev=0;
     scanf("%d",&n);
-    int temp=n;
-    while(n>0)
+    int t=n;
+    while(n!=0)
     {
         rem=n%10;
-        rev=rev*10+rem;
+        rev=10*rev+rem;
         n=n/10;
     }
-    if(temp==rev)
+    if(t==rev)
     {
         printf("True");
     }
