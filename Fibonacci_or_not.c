@@ -3,7 +3,7 @@ int main()
 {
     int n,a,b,c;
     scanf("%d",&n);
-    if(n==1||n==0)
+    if(n==0 || n==1)
     {
         printf("%d",n);
     }
@@ -19,7 +19,7 @@ int main()
         b=c;
         c=a+b;
     }
-    if(n==c)
+    if(c==n)
     {
         printf("True");
     }
