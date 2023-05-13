@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int n,r,sum;
+    int n,r;
     scanf("%d",&n);
-    sum=0;
+    int sum=0;
     while(sum!=1&&sum!=4)
     {
         sum=0;
