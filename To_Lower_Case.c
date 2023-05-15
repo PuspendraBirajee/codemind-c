@@ -2,14 +2,14 @@
 #include<string.h>
 int main()
 {
-    char s[50];
-    scanf("%s",s);
-    for(int i=0;s[i]!=NULL;i++)
+    char s1[100];
+    scanf("%s",s1);
+    for(int i=0; s1[i]!=NULL; i++)
     {
-        if(s[i]>='A'&&s[i]<='Z')
+        if(s1[i]>=65 && s1[i]<=90)
         {
-            s[i]=s[i]+32;
+            s1[i]=s1[i]+32;
         }
     }
-    printf("%s",s);
+    printf("%s",s1);
 }
