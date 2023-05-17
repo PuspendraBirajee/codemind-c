@@ -1,9 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int n,c=0;
+    int n;
     scanf("%d",&n);
-    for(int i=1;i<=n;i++)
+    int c=0;
+    for(int i=1; i<=n; i++)
     {
         if(n%i==0)
         {
@@ -14,7 +15,7 @@ int main()
     {
         printf("prime");
     }
-    else
+    else 
     {
         printf("not a prime");
     }
