@@ -5,23 +5,18 @@ int main()
     scanf("%d",&n);
     for(int i=1; i<=n; i++)
     {
-        for(int k=1; k<=n-i; k++)
+        for(int j=1; j<=i; j++)
         {
-            printf(" ");
-        }
-        for(int j=1; j<=n; j++ )
-        {
-            if(i==1 || i==n || j==1 || j==n)
+            if(j==1|| j==i || i==n|| j==n)
             {
                 printf("*");
             }
             else 
-            {
-                printf(" ");
-            }
+        {
+            printf(" ");
+        }
         }
         printf("
 ");
     }
 }
-    
