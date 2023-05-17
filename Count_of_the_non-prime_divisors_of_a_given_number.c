@@ -1,31 +1,13 @@
 #include<stdio.h>
-int fun(int);
-int main()
-{
-    int n,c1=0;
-    scanf("%d",&n);
-    for(int i=1;i<=n;i++)
-    {
-        if(n%i==0)
-        {
-            if(fun(i))
-            {
-               c1++; 
-            }
-        }
-    }
-    printf("%d",c1);
-}
-int fun(int n)
+int prime(int n)
 {
     int c=0;
-    for(int i=1;i<=n;i++)
+    for(int i=1; i<=n; i++)
     {
         if(n%i==0)
         {
             c++;
         }
-        
     }
     if(c==2)
     {
@@ -35,4 +17,19 @@ int fun(int n)
     {
         return 1;
     }
+}
+int main()
+{
+    int n,c=0;
+    scanf("%d",&n);
+    for(int i=1; i<=n; i++)
+    {
+        if(n%i==0)
+        {
+            if(prime(i))
+            c++;
+        }
+    }
+    printf("%d",c);
+    
 }
