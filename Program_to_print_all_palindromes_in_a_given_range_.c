@@ -1,34 +1,22 @@
-#include<stdio.h>
-int pali(int);
+# include<stdio.h>
 int main()
 {
-    int a,b;
-    scanf("%d%d",&a,&b);
-    for(int i=a;i<=b;i++)
+    int m,n,i;
+   
+    scanf("%d%d",&m,&n);
+    for(int i=m; i<=n; i++)
     {
-        if(pali(i))
+        int r,rev=0; 
+        int t=i;
+        while(t!=0)
+        {
+            r=t%10;
+            rev=rev*10+r;
+            t=t/10;
+        }
+        if(i==rev)
         {
             printf("%d ",i);
         }
-    }
-    
-}
-int pali(int n)
-{
-    int r,rev=0;
-    int t=n;
-    while(n!=0)
-    {
-        r=n%10;
-        rev=rev*10+r;
-        n=n/10;
-    }
-    if(t==rev)
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
     }
 }
