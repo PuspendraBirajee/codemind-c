@@ -12,25 +12,19 @@ int main()
     {
         if(i%2!=0)
         {
-           if(a[i]%2!=0)
-           {
-               c++;
-           }
+            c++;
+            if(a[i]%2!=0)
+            {
+                c1++;
+            }
         }
-           else
-           {
-               if(a[i]%2!=0)
-               {
-                   c1++;
-               }
-           }
     }
-    if(c1==0)
+    if(c==c1)
     {
         printf("True");
     }
     else
     {
-    printf("False");
+        printf("False");
     }
 }
