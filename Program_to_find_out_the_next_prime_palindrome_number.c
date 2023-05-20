@@ -1,8 +1,24 @@
 #include<stdio.h>
+int prime(int);
+int pali(int);
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    for(int i=n+1;;i++)
+    {
+        if(prime(i)&&pali(i))
+        {
+          printf("%d",i);
+          break;
+        }
+    }
+    
+}
 int prime(int n)
 {
     int c=0;
-    for(int i=1; i<=n; i++)
+    for(int i=1;i<=n;i++)
     {
         if(n%i==0)
         {
@@ -18,17 +34,17 @@ int prime(int n)
         return 0;
     }
 }
-int pal(int n)
+int pali(int n)
 {
-    int p=n;
-    int rev=0;
+    int r,rev=0;
+    int t=n;
     while(n!=0)
     {
-        int r=n%10;
+        r=n%10;
         rev=rev*10+r;
         n=n/10;
     }
-    if(rev==p)
+    if(t==rev)
     {
         return 1;
     }
@@ -36,19 +52,4 @@ int pal(int n)
     {
         return 0;
     }
-}
-int main()
-{
-    int n,f;
-    scanf("%d",&n);
-    for(int i=n+1; ; i++)
-    {
-        if(prime(i) && pal(i))
-        {
-            f=i;
-            break;
-        }
-    }
-    printf("%d",f);
-    
 }
